@@ -1,0 +1,75 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+
+html {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background: #000002;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  /* background: url(./robot.gif); */
+  background: url(./pink_ring.gif);
+  background-size:70%;
+  background-position: left center;
+  background-repeat: no-repeat;
+
+}
+
+button{
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: "Consolas";
+  font-size: 20px;
+  color: white;
+  background: #ff3482;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+  filter: brightness(90%);
+}
+
+button:active{
+  transform: scale(0.95);
+}
+
+.jeet{
+  font-family: "consolas";
+  position:absolute;
+  bottom: 0;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 5px 5px rgba(0, 0, 0, 0.1);
+  width:max-content;
+  text-align: center;
+}
+
+
+@media screen and (max-width:1000px) {
+  .container{
+    background-size:100vh;
+    background-position: center center;
+  }
+  
+  button{
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.7);
+
+  }
+  
+}
